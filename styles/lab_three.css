@@ -1,0 +1,34 @@
+.card .video {
+    border-bottom: 0.25rem solid #fc0; 
+    height: 404px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card .video iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .card-container {
+      flex-direction: row;
+    }
+  
+    .card {
+      width: calc(50% - 1rem);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      .card {
+        width: calc(33.333% - 1rem);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card .video {
+      height: 404px;
+    }
+  }  
